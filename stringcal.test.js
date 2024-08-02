@@ -1,8 +1,9 @@
 const { add } = require("./Stringcal");
 
-// Test for empty striny
-console.log(" empty string");
-console.log(add("")); //  output: 0
+test("empty string returns 0", () => {
+  expect(add("")).toBe(0);
+});
 
-console.log(" single number");
-console.log(add("1")); //output=1
+test("single number returns the number", () => {
+  expect(add("1")).toBe(1);
+});
