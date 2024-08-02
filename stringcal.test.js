@@ -7,3 +7,6 @@ test("empty string returns 0", () => {
 test("single number returns the number", () => {
   expect(add("1")).toBe(1);
 });
+test("sum of the number returns the Sum", () => {
+  expect(add("1,2")).toBe(3);
+});
