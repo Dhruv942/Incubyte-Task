@@ -6,7 +6,6 @@ function add(numbers) {
   for (const num of numbers.split(",")) {
     sum = sum + Number(num);
   }
-
   return sum;
 }
 
