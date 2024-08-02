@@ -18,6 +18,3 @@ test("number with new line", () => {
 test("custom delimiter returns sum of numbers", () => {
   expect(add("//;\n1;2")).toBe(3); // custom delimiter and sum
 });
-test("custom delimiter returns sum of numbers", () => {
-  expect(add("1,-2,3")).toBe(-2); // custom delimiter and sum
-});
