@@ -10,3 +10,7 @@ test("single number returns the number", () => {
 test("sum of the number returns the Sum", () => {
   expect(add("1,2")).toBe(3);
 });
+
+test("number with new line", () => {
+  expect(add("1,2\n,3")).toBe(3);
+});
