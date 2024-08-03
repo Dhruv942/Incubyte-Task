@@ -8,17 +8,15 @@ function add(numbers) {
       if (nums[i] < 0) {
         negatives.push(nums[i]);
       }
+      //1000 condtion
+      if (nums[i] > 1000) {
+        nums[i] = 0; // ignore numbers greater than 1000 by setting them to 0
+      }
     }
     if (negatives.length > 0) {
       throw new Error("negative numbers not allowed: " + negatives.join(", "));
     }
 
-    let sum;
-    for (var i = 0; i < nums.length; i++) {
-      if (nums[i] < 1000) {
-        sum += nums;
-      }
-    }
     return nums.reduce((sum, num) => sum + num, 0);
   }
 
@@ -30,6 +28,10 @@ function add(numbers) {
   for (var i = 0; i < nums.length; i++) {
     if (nums[i] < 0) {
       negatives.push(nums[i]);
+    }
+    //1000 condtion
+    if (nums[i] > 1000) {
+      nums[i] = 0; // ignore numbers greater than 1000 by setting them to 0
     }
   }
   if (negatives.length > 0) {

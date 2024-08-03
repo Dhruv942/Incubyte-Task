@@ -25,8 +25,8 @@ test("negative numbers throw an error", () => {
   ); // expect error for negative numbers
 });
 
-test("custom delimiter returns sum of numbers", () => {
-  expect(add("1000,1001,1002")).toBe(1000); // custom delimiter and sum
+test("ingore 1000 number", () => {
+  expect(add("1,1001,1002,5")).toBe(1); // custom delimiter and sum
 });
 
 /*
