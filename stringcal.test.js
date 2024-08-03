@@ -25,6 +25,10 @@ test("negative numbers throw an error", () => {
   ); // expect error for negative numbers
 });
 
+test("custom delimiter returns sum of numbers", () => {
+  expect(add("1000,1001,1002")).toBe(1000); // custom delimiter and sum
+});
+
 /*
 //const { add } = require("./Stringcal");
 

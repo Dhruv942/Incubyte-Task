@@ -12,6 +12,13 @@ function add(numbers) {
     if (negatives.length > 0) {
       throw new Error("negative numbers not allowed: " + negatives.join(", "));
     }
+
+    let sum;
+    for (var i = 0; i < nums.length; i++) {
+      if (nums[i] < 1000) {
+        sum += nums;
+      }
+    }
     return nums.reduce((sum, num) => sum + num, 0);
   }
 
