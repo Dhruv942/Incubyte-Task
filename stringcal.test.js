@@ -20,8 +20,11 @@ test("custom delimiter returns sum of numbers", () => {
 });
 
 test("negative numbers throw an error", () => {
-  expect(() => add("1,-2,-23")).toThrow("negative numbers not allowed: -2"); // expect error for negative numbers
+  expect(() => add("1,-2,-23")).toThrow(
+    "negative numbers not allowed: -2, -23"
+  ); // expect error for negative numbers
 });
+
 /*
 //const { add } = require("./Stringcal");
 
